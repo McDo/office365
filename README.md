@@ -67,7 +67,7 @@ Accessing it from **http://localhost:3333** and have fun with it.
 
 Project Structure
 -----------------
-The project is built with an AppController ( extends from Marionette Controller ) and several Views ( extend from Backbone Marionette ItemView ). The View controls behaviors of the attached DOM element and all of its sub-elements, and the AppController is in charge of deciding which View is about to show up depends on user interactions and change the routes. Although the project doesn't have any backend data, it's still cool to construct it in a MVC style with Backbone and Marionette that we can easily add or modify a view without interferer other part of the code. 
+The project is built with an AppController ( extends from Backbone Marionette Controller ) and several Views ( extend from Backbone Marionette ItemView ). The View controls behaviors of the attached DOM element and all of its sub-elements, and the AppController is in charge of deciding which View is about to show up depends on user interactions and change the routes. Although the project doesn't have any backend data, it's still cool to construct it in a MVC style with Backbone and Marionette that we can easily add or modify a view without interferer other part of the code. 
 
 Here is the full structure of the code: 
 
