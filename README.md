@@ -63,7 +63,7 @@ or
 ```sh
 npm start
 ```
-Accessing it from http://localhost:3333 and have fun with it.
+Accessing it from **http://localhost:3333** and have fun with it.
 
 Project Structure
 -----------------
