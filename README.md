@@ -76,7 +76,7 @@ Here is the full structure of the code:
 
 What if confused with the code ...
 ----
-I've tried my best to annotate the code for some time. But maybe you would find some parts are hard to understand ( sorry about that but I'm not a native english speaker after all ) still. So if you find any issue with the comments or the code, please send [me](mailto://mcdooooo@gmail.com) an email or use the [issue tracker](https://github.com/McDo/office365/issues/new). 
+I've tried my best to annotate the code for some time. But maybe you would find some parts are hard to understand ( sorry about that but I'm not a native english speaker after all ) still. So if you find any issue with the comments or the code, please send [me](mailto:mcdooooo@gmail.com) an email or use the [issue tracker](https://github.com/McDo/office365/issues/new). 
 
 Thanks.
 
