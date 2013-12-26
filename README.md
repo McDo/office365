@@ -1,5 +1,7 @@
-Office365 Home Premium -- primitive man's daily life with Office365
+Office365 Home Premium 
 ===================================================================
+##-- primitive man's daily life with Office365
+
 
 Little stories about a primitive man family that overcame difficulties with the help of Office365 Home Premium in daily life. Showing the new features of the product. The site is constructed with Backbone Marionette and applies responsive design. It has been tested on most modern browsers like Chrome( desktop and android devices), Internet Explorer10/11( desktop and windows phone ), firefox and Safari( desktop and iPad/iPhone ). 
 
@@ -75,7 +77,9 @@ Here is the full structure of the code:
 
 What if confused with the code ...
 ----
-I've tried my best to annotate the code for some time. But maybe you would find some parts are hard to understand ( sorry about that but I'm not a native english speaker after all ) still. So if you find any issue with the comments or the code, please send [me](mailto://mcdooooo@gmail.com) an email or use the [issue tracker](https://github.com/McDo/office365/issues/new). Thanks.
+I've tried my best to annotate the code for some time. But maybe you would find some parts are hard to understand ( sorry about that but I'm not a native english speaker after all ) still. So if you find any issue with the comments or the code, please send [me](mailto://mcdooooo@gmail.com) an email or use the [issue tracker](https://github.com/McDo/office365/issues/new). 
+
+Thanks.
 
 
 License
