@@ -4,7 +4,7 @@ Office365 Home Premium -- primitive man's daily life with Office365
 
 Little stories about a primitive man family that overcame difficulties with the help of Office365 Home Premium in daily life. Showing the new features of the product. The site is constructed with [Backbone Marionette](https://github.com/marionettejs/backbone.marionette) and applies responsive design. It has been tested on most modern browsers like Chrome( desktop and android devices), Internet Explorer10/11( desktop and windows phone ), firefox and Safari( desktop and iPad/iPhone ). 
 
-*See the official website [here](http://www.microsoft.com/china/officeconsumer/campaign).*
+**See the official website [here](http://www.microsoft.com/china/officeconsumer/campaign).**
 
 ![](https://raw.github.com/McDo/office365/master/README/envelop.png)
 
