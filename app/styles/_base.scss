@@ -1,0 +1,43 @@
+
+// @import "compass/reset";
+@import "compass/utilities";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑", "Microsoft YaHei", "Segoe UI";
+	overflow: hidden;
+	-ms-touch-action: none;
+}
+
+a {
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+/*============= reset =============*/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+fieldset, img { border: 0; }
+:focus { outline: 0; }
+address, caption, cite, code, dfn,
+em, th, var, optgroup { font-style: normal; font-weight: normal; }
+abbr, acronym { border: 0; font-variant: normal; }
+input, button, textarea,
+select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+code, kbd, samp, tt { font-size: 100%; }
+input, button, textarea, select { *font-size: 100%; }
+img,input,textarea,select,button { vertical-align: middle; }
+button{ padding: 0 5px; line-height: 18px; }
+body {  font: 100%/1.5 "Microsoft Yahei","\5B8B\4F53","Arial"; -webkit-text-size-adjust: none; background-color: #fff; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th { text-align: left; }
+sub { font-size: 100%; vertical-align: baseline; }
+sup{ vertical-align: top; font-size: 100%; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }

@@ -1,0 +1,28 @@
+{
+  "author": "Do",
+  "name": "office365",
+  "description": "Microsoft Office365 Home Premium branding site",
+  "version": "1.0.0",
+  "homepage": "http://www.microsoft.com/china/officeconsumer/campaign/",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "scripts": {
+    "start": "brunch watch --server -P"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.4",
+    "less-brunch": ">= 1.0 < 1.4",
+
+    "css-brunch": ">= 1.0 < 1.4",
+
+    "handlebars-brunch": ">= 1.0 < 1.4",
+
+    "uglify-js-brunch": ">= 1.0 < 1.4",
+    "clean-css-brunch": ">= 1.0 < 1.4"
+  }
+}

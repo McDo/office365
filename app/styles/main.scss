@@ -1,0 +1,2320 @@
+
+@import "base";
+
+#wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: auto;
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #activitiesContainer {
+        background: black;
+    }
+
+    #familyContainer {
+        background: black;
+    }
+
+    #toolsContainer {
+        background: black;
+    }
+
+    .main {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        bottom: 0;
+    }
+
+    .tile {
+       position: absolute;
+    }
+
+    #nav {
+        width: 100%;
+        height: 50px;
+        background: black;
+        position: fixed;
+        bottom: 0;
+        z-index: 9999;
+        color: white;
+        text-align: center;
+
+        .navRow {
+            width: 94%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+        }
+
+        .navItem {
+            height: 100%;
+            width: 14%;
+            position: absolute;
+            top: 0;
+            background: black;
+            overflow: hidden;
+            cursor: pointer;
+
+            .navCurtain {
+                width: 100%;
+                height: 100%;
+                background-color: #4d4d4d;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                z-index: 0;
+            }
+
+            p {
+                position: relative;
+                width: 100%;
+                color: white;
+                font-weight: normal;
+                z-index: 999;
+            }
+
+            .navArrow {
+                position: absolute;
+                left: 0;
+                top: 17px;
+                width: 16px;
+                z-index: 999;
+            }
+
+            .navArrowDown {
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                opacity: 0;
+                top: 10px;
+            }
+        // end of .navItem
+        }
+
+        .navHome {
+            left: 0;
+            width: 11%;
+
+            .navArrow {
+                left: 16px;
+            }
+        }
+
+        .navActivities {
+            left: 11%;
+
+            .navArrow {
+                left: 15px;
+            }
+        }
+
+        .navFamilyChoice {
+            left: 25%;
+            width: 17%;
+
+            .navArrow {
+                left: 18px;
+            }
+        }
+
+        .navTools {
+            left: 42%;
+
+            .navArrow {
+                left: 15px;
+            }
+        }
+
+        .navMore {
+            left: 56%;
+
+            .navArrow {
+                left: 15px;
+            }
+        }
+
+        .navTry {
+            left: 70%;
+
+            .navArrow {
+                left: 15px;
+            }
+        }
+
+        .navBuy {
+            position: absolute;
+            top: 0;
+            left: 84%;
+            height: 100%;
+            width: 16%;
+            background: #e84c3d;
+            cursor: pointer;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-height: 24px;
+            }
+        }
+    // end of #nav
+    }
+
+    #slider {
+
+        top: 0;
+        background-color: #edf1e2;
+
+        .slideCtl {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            margin-bottom: 50px;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        .slideLeft {
+            left: 3%;
+            background: transparent url("../images/sliders/controls/left.png") no-repeat left top;
+            display: none;
+        }
+
+        .slideLeft:hover {
+            background: transparent url("../images/sliders/controls/left.png") no-repeat 0 -51px;
+        }
+
+        .slideRight {
+            right: 3%;
+            background: transparent url("../images/sliders/controls/right.png") no-repeat left top;
+        }
+
+        .slideRight:hover {
+            right: 3%;
+            background: transparent url("../images/sliders/controls/right.png") no-repeat 0 -51px;
+        }
+
+        .slideThumbnailsWrapper {
+
+            position: absolute;
+            width: 100%;
+            bottom: 4.4%;
+            z-index: 999;
+
+            .slideThumbnails {
+                position: relative;
+                margin: 0 auto;
+
+                .slideThumbnail {
+                    height: 100%;
+                    position: relative;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #slides {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .slide {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .slide1 {
+                left: 0;
+                background: white url("../images/sliders/slides/scene1/home.png") no-repeat center 20%;
+                background-size: 60%;
+
+                .header {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    max-width: 1600px;
+                    height: 20px;
+                    margin: 2.1em auto 0 auto;
+
+                    .grid-container { 
+                        margin-left: auto; 
+                        margin-right: auto; 
+                        max-width: 1180px; 
+                        width: 95%; 
+                        height: 100%;
+                        position: relative;
+                    }
+                }
+
+                h1 {
+                    text-indent: -999999px;
+                    position: absolute;
+                    left: 19.53%;
+                    top: 12.4%;
+                    width: 45.3%;
+                    height: 15.89%;
+                    max-width: 461px;
+                    max-height: 103px;
+                    background: transparent url("../images/sliders/slides/scene1/title.png") no-repeat left top;
+                    background-size: contain;
+                    z-index: 999;
+                }
+
+                #cloud1 {
+                    left: 33%;
+                    top: 190px;
+                    width: 7.32%;
+                }
+
+                #cloud2 {
+                    left: 41.1%;
+                    top: 7.6%; 
+                    width: 8.78%;
+                }
+
+                #mountain {
+                    right: 22%;
+                    top: 180px;
+                    width: 18%;
+                }
+
+                img {
+                    position: absolute;
+                }
+
+            // end of .slide1
+            }
+
+            .slide2 {
+                left: 100%;
+                background: #edf1e2 url("../images/sliders/slides/scene2/bg.png") no-repeat 60% 40%;
+                background-size: 80%;
+
+                .introBox {
+                    text-indent: -999999px;
+                    position: absolute;
+                    left: 11.1%;
+                    top: 15%;
+                    width: 23.9%;
+                    height: 35.5%;
+                    max-width: 330px;
+                    z-index: 999;
+                }
+
+                .howTo {
+                    background: transparent url("../images/sliders/slides/scene2/howTo.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    cursor: pointer;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: 11.13%;
+                    top: 15%;
+                }
+
+                .solution {
+                    background: transparent url("../images/sliders/slides/scene2/solution.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: -50%;
+                    top: 20%;
+                    cursor: pointer;
+                }
+
+                .human {
+                    position: absolute;
+                }
+
+                .primitive {
+                    top: 39%;
+                    right: 25%;
+                    max-width: 500px;
+                    max-height: 240px;
+                    height: 38.33%;
+                }
+
+                .modern {
+                    top: 48.31%;
+                    height: 28%;
+                    right: 10%;
+                    max-height: 202px;
+                    max-width: 610px;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                }
+
+                #flame {
+                    position: absolute;
+                    right: 27.20%;
+                    top: 45.22%;
+                    height: 28.47%;
+                    max-width: 123px;
+                    max-height: 175px;
+                }
+
+                .dinosaurSurrender {
+                    position: absolute;
+                    right: 30%;
+                    top: 44%;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    // height: 28.31%;
+                    height: 27.31%;
+                    max-width: 179px;
+                    max-height: 207px;
+                }
+
+            // end of .slide2
+            }
+
+            .slide3 {
+                left: 100%;
+                background: #edf1e2 url("../images/sliders/slides/scene3/bg.png") no-repeat 50% 40%;
+                background-size: 100%;
+
+                .introBox {
+                    text-indent: -999999px;
+                    position: absolute;
+                    left: 11.1%;
+                    width: 23.9%;
+                    height: 35.5%;
+                    max-width: 330px;
+                    z-index: 999;
+                }
+
+                .howTo {
+                    background: transparent url("../images/sliders/slides/scene3/howTo.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    cursor: pointer;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: 11.13%;
+                    top: 15%;
+                }
+
+                .solution {
+                    background: transparent url("../images/sliders/slides/scene3/solution.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: -50%;
+                    top: 20%;
+                    cursor: pointer;
+                }
+
+                .human {
+                    position: absolute;
+                    // height: 23.19%;
+                    width: 65%;
+                }
+
+                .ready {
+                    max-width: 696px;
+                    top: 50%;
+                    right: 15%;
+                }
+
+                .go {
+                    top: 52%;
+                    right: 13%;
+                    max-width: 810px;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                }
+
+                .cloud {
+                    position: absolute;
+                    right: 45%;
+                    top: 15%;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                }
+
+                .bird {
+                    position: absolute;
+                    top: 25%;
+                    right: 36%;
+                }
+
+                .monster {
+                    position: absolute;
+                    right: 25%;
+                    top: 41%;
+                    width: 22.79%;
+                    max-width: 175px;
+                    max-height: 209px; 
+                    z-index: 999;
+                }
+
+                .cloudWithSignal {
+                    position: absolute;
+                    right: 45%;
+                    top: 15%;
+                    // width: 16.76%;
+                    // height: 27.31%;
+                    // width: 219px;
+                    // height: 260px;
+                }
+
+                .triceratops {
+                    position: absolute;
+                    right: 25%;
+                    top: 40%;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    width: 26.79%;
+                    max-width: 214px;
+                    max-height: 233px;
+                }
+
+                .phone {
+                    position: absolute;
+                    right: 46%;
+                    top: 50%;
+                    width: 9%;
+                    max-width: 214px;
+                    min-width: 120px;
+                    max-height: 233px;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                }
+
+            // end of .slide3
+            }
+
+
+            .slide4 {
+                left: 100%;
+                // background: #edf1e2 url("../images/sliders/slides/scene4/bg.png") no-repeat;
+                background: #edf1e2;
+
+                .river {
+                    width: 110%;
+                    position: absolute;
+                    left: -5%;
+                }
+
+                .introBox {
+                    text-indent: -999999px;
+                    position: absolute;
+                    left: 11.1%;
+                    width: 23.9%;
+                    height: 35.5%;
+                    max-width: 330px;
+                    z-index: 999;
+                }
+
+                .howTo {
+                    background: transparent url("../images/sliders/slides/scene4/howTo.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    cursor: pointer;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: 11.13%;
+                    top: 23%;
+                    max-width: 327px;
+                    max-height: 219px;
+                }
+
+                .solution {
+                    height: 47%;
+                    background: transparent url("../images/sliders/slides/scene4/solution.png") no-repeat 80% 40%;
+                    background-size: contain;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                    opacity: 1;
+                    left: -50%;
+                    top: 28%;
+                    cursor: pointer;
+                    max-width: 327px;
+                    max-height: 295px;
+                }
+
+                .island {
+                    width: 42.17%;
+                    max-width: 576px;
+                    position: absolute;
+                    right: 11.93%;
+                    top: 14.97%;
+                }
+
+                .lotus {
+                    z-index: 999;
+                    position: absolute;
+                    left: 38%;
+                    top: 41.43%;
+                    width: 26.35%;
+                    max-width: 360px;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;    
+                    // border: 1px solid black;
+
+                    .android {
+                        width: 42.11%;
+                        max-width: 166px;
+                        position: absolute;
+                        left: 48.33%;
+                        top: 0;
+                    }
+
+                    .apple {
+                        width: 26.94%;
+                        max-width: 97px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 6.98%;
+                    }
+
+                    .ms {
+                        width: 48.89%;
+                        max-width: 176px;
+                        position: absolute;
+                        left: 30.56%;
+                        bottom: 0;
+                    }
+
+                // .lotus
+                }
+
+                .cat {
+                    width: 32.14%;
+                    max-width: 439px;
+                    max-height: 191px;
+                    position: absolute;
+                    top: 57%;
+                    left: 34%;
+                }
+
+                .survivor {
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    width: 52%;
+                    max-width: 715px;
+                    position: absolute;
+                    right: 6.93%;
+                    top: 8.97%;
+                }
+
+                .author {
+                    position: absolute;
+                    bottom: 5%;
+                    right: 5%;
+                    width: 10%;
+                    min-width: 100px;
+                    max-width: 167px;
+                }
+
+
+            // end of .slide4
+            }
+
+
+            .slide5 {
+                left: 100%;
+                background: #edf1e2 url("../images/sliders/slides/scene5/bg.png") no-repeat 50% 40%;
+                background-size: 100%;
+
+                .joinUs {
+                    cursor: pointer;
+                    position: absolute;
+                    width: 13.67%;
+                    max-width: 214px;
+                    max-height: 74px;
+                    min-width: 80px;
+                    right: 26.78%;
+                }
+
+            // end of .slide5
+            }
+
+
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #activities {
+
+        bottom: 0;
+
+        .tile {
+            .title {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                text-align: left;
+                background-color: black;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+                opacity: 0.8;
+                color: white;
+                font-weight: normal;
+                text-indent: 3%;
+                padding: 4% 0;
+            }
+
+            .chatBox {
+                position: relative;
+                width: 100%;
+                height: 80%;
+
+                .rightNowBtn {
+                    position: absolute;
+                    left: 6.5%;
+                    bottom: 13%;
+                    cursor: pointer;
+                }
+
+                .triangle {
+                    position: absolute;
+                    top: 100%;
+                    left: 55%;
+                }
+
+                p {
+                    position: relative;
+                    color: white;
+                    width: 87%;
+                    margin: 0 auto;
+                }
+            }
+
+            .guy {
+                z-index: 20;
+                position: absolute;
+                right: 5%;
+                width: 27%;
+            }
+        }
+
+        .tile1 {
+            width: 34%;
+            height: 50%;
+            left: 0;
+            top: 0;
+            background: #f1c40f url('../images/actPic1.png') no-repeat center;
+        }
+
+        .tile2 {
+            width: 33.33333%;
+            height: 50%;
+            left: 34%;
+            top: 0;
+            background: #ea5503 url('../images/actPic2.png') no-repeat center;
+        }
+
+        .tile3 {
+            width: 33.33333%;
+            height: 50%;
+            right: 0;
+            top: 0;
+            background: #ccecfb url('../images/actPic3.png') no-repeat center;
+        }
+
+        .tile4 {
+            width: 34%;
+            height: 50%;
+            left: 0;
+            top: 49.99999%;
+            background: #f39c11;
+
+            .chatBox {
+                background: #f1c40f;
+            }
+        }
+
+        .tile5 {
+            width: 33.33333%;
+            height: 50%;
+            left: 34%;
+            top: 50%;
+            background: #d25400;
+
+            .chatBox {
+                background: #e77e23;
+            }
+
+            .guy {
+                width: 32%;
+            }
+        }
+
+        .tile6 {
+            width: 33.33333%;
+            height: 50%;
+            right: 0;
+            top: 49.99999%;
+            background: #c1392b;
+
+            .chatBox {
+                background: #e84c3d;
+            }
+        }
+
+    // end of #activitiesC
+    }
+
+
+    #familyChoice {
+
+        bottom: 0;
+
+        #family {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            .tile {
+                position: absolute;
+            }
+
+            .tileFigure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                cursor: pointer;
+
+                .tileTitle {
+                    height: 30%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -30%;
+                    text-align: center;
+                    color: white;
+                    background: black;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+                    opacity: 0.7;
+
+                    p {
+                        padding-top: 9%;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .tileContent {
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                display: none;
+
+                p {
+                    position: relative;
+                    width: 86%;
+                    color: white;
+                    top: 8%;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                .learnMore {
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+
+            .tile1 {
+        	    width: 33.33333%;
+        	    height: 49.99999%;
+        	    left: 0;
+                top: 0;
+                overflow: hidden;
+
+                .tileFigure {
+                    left: 0;
+                    top: 0;
+                    background: transparent url('../images/mario.png') no-repeat center;
+                    background-size: 60%;
+                }
+
+                .tileContent {
+                    right: 0;
+                }
+            }
+
+            .tile2 {
+            	width: 33.33333%;
+                // width: 34%;
+                height: 49.99999%;
+            	left: 33.33333%;
+            	top: 0;
+                overflow: hidden;
+
+                .tileFigure {
+                    right: 0;
+                    top: 0;
+                    background: transparent url('../images/27g.png') no-repeat center;
+                    background-size: 100%;
+
+                }
+
+                .tileContent {
+                    left: 0;
+                }
+            }
+
+            .tile3 {
+            	width: 33.33333%;
+                height: 49.99999%;
+            	left: 0;
+            	top: 49.99999%;
+                overflow: hidden;
+
+                .tileFigure {
+                    left: 0;
+                    top: 0;
+                    background: transparent url('../images/octopus.png') no-repeat center;
+                    background-size: 75%;
+                }
+
+                .tileContent {
+                    right: 0;
+                }
+            }
+
+            .tile4 {
+            	width: 33.33333%;
+                // width: 34%;
+            	height: 49.99999%;
+            	left: 33.33333%;
+            	top: 49.99999%;
+                overflow: hidden;
+
+                .tileFigure {
+                    right: 0;
+                    top: 0;
+                    background: transparent url('../images/noooo.png') no-repeat center;
+                    background-size: 60%;
+                }
+
+                .tileContent {
+                    left: 0;
+                }
+            }
+
+            .tile5 {
+            	width: 33.33333%;
+            	height: 80%;
+            	right: 0;
+                top: 0;
+                cursor: auto;
+
+                .testimoniesWrapper {
+                    position: relative;
+                    top: 10%;
+                    left: 0;
+                    margin: 0 auto;
+                    width: 90%;
+                    height: 90%;
+                    color: white;
+
+                    .testimonies {
+                       position: absolute;
+                       width: 100%;
+                       height: 100%;
+                       top: 0;
+
+                       p {
+                        position: relative;
+                        width: 100%;
+                        text-align: right;
+                        top: 10%;
+                       }
+                    }
+                }
+
+                .testimonies1 {
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: -10%;
+                }
+
+                .testimonies2 {
+                    left: 0;
+                }
+
+                .testimonies3 {
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    opacity: 0;
+                    left: 10%;
+                }
+
+                .triangle {
+                    position: relative;
+                    display: block;
+                    margin: 0 auto;
+                    top: 9%;
+                    z-index: 999;
+                }
+            }
+
+            .tile6 {
+                width: 33.33333%;
+                height: 20%;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+
+                .modern {
+                    position: absolute;
+                    top: 25%;
+                    min-width: 40px;
+                    max-width: 90px;
+                    cursor: pointer;
+                }
+
+                .modern1 {
+                    right: 75%;
+                }
+
+                .modern2 {
+                    right: 40%;
+                }
+
+                .modern3 {
+                    right: 5%;
+                }
+            }
+        
+        // end of #family
+        }
+    // end of #familyChoice
+    }
+
+
+    #tools {
+
+        bottom: 0;
+
+        .tile {
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .tileFigure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            cursor: pointer;
+
+            .tileTitle { 
+                height: 30%;
+                width: 100%;
+                position: absolute;
+                bottom: -30%;
+                text-align: center;
+                color: white;
+                background: black;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+                opacity: 0.7;
+
+                p {
+                    padding-top: 9%;
+                    width: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .tileContent {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            display: none;
+            overflow: hidden;
+
+            p {
+                position: relative;
+                width: 88%;
+                color: white;
+                top: 8%;
+                font-size: 14px;
+                margin: 0 auto;
+                line-height: 22px;
+            }
+
+            .learnMore {
+                cursor: pointer;
+            }
+
+        }
+
+        .tile1 {
+            width: 33.33333%;
+            height: 50%;
+            left: 0;
+            top: 0;
+            background: black;
+
+            .tileFigure {
+                left: 0;
+                top: 0;
+                background: #e84c3d url('../images/chemistry.png') no-repeat left top;
+                background-size: 200%;
+            }
+
+            .tileContent {
+                right: 0;
+            }
+        }
+
+        .tile2 {
+            width: 34%;
+            height: 50%;
+            left: 33.33333%;
+            top: 0;
+            background: black;
+
+            .tileFigure {
+                left: 0;
+                top: 0;
+                background: #e1bb1c url('../images/shining.png') no-repeat center 60%;
+                background-size: 100%;
+            }
+
+            .tileContent {
+                bottom: 0;
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        .tile3 {
+            width: 33.33333%;
+            height: 50%;
+            right: 0;
+            top: 0;
+            background: black;
+
+            .tileFigure {
+                right: 0;
+                top: 0;
+                background: #e77e23 url('../images/judo.png') no-repeat center;
+                background-size: 60%;
+            }
+
+            .tileContent {
+                left: 0;
+            }
+        }
+
+        .tile4 {
+            width: 33.33333%;
+            height: 50%;
+            left: 0;
+            top: 49.99999%;
+            background: black;
+
+            .tileFigure {
+                left: 0;
+                top: 0;
+                background: #f8b851 url('../images/form.png') no-repeat center;
+                background-size: 90%;
+            }
+
+            .tileContent {
+                right: 0;
+            }
+        }
+
+        .tile5 {
+            width: 34%;
+            height: 50%;
+            left: 33.33333%;
+            top: 49.99999%;
+            background: black;
+
+            .tileFigure {
+                left: 0;
+                bottom: 0;
+                background: #be3a2b url('../images/tablet.png') no-repeat center;
+                background-size: 80%;
+            }
+
+            .tileContent {
+                top: 0;
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        .tile6 {
+            width: 33.33333%;
+            height: 50%;
+            right: 0;
+            top: 49.99999%;
+            background: black;
+
+            .tileFigure {
+                right: 0;
+                top: 0;
+                background: #e6594c url('../images/lion.png') no-repeat center;
+                background-size: 80%;
+            }
+
+            .tileContent {
+                left: 0;
+            }
+        }
+
+    // end of #tools
+    }
+
+    #share {
+
+        bottom: 0;
+
+        .shareContent {
+            width: 100%;
+            height: auto;
+            min-height: 180px;
+            position: relative;
+            top: 3%;
+            margin: 0 auto;
+
+            img {
+                width: 10%;
+                display: block;
+                cursor: pointer;
+            }
+
+            .sina {
+                position: absolute;
+                max-width: 182px;
+                max-height: 150px;
+                left: 25%;
+                top: 0;
+            }
+
+            .renren {
+                position: relative;
+                max-width: 209px;
+                max-height: 135px;
+                width: 12%;
+                margin: 0 auto;
+            }
+
+            .shopping {
+                position: absolute;
+                max-width: 181px;
+                max-height: 146px;
+                right: 24%;
+                top: 0;
+            }
+        }
+
+        /* Microsoft standard footer. */
+        /* clearing hack */
+        .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+        .clearfix{*zoom:1;}
+        /* end clearing hack */
+
+        /*============= productsLinks =============*/
+        .ms-pro-links{ max-height: 350px; position: absolute; width: 100%; padding-top: 2.5%; bottom: 90px; background: #EEEEEE; }
+        .grid-container { margin-left: auto; margin-right: auto; max-width: 1180px; width: 95%; }
+        .grid-unit{ display: inline; float: left; position: relative; width: 23%; margin-left: 2%; }
+        .grid-unit .heading{ font-size: 1em; font-weight: normal; line-height: 1.25em; margin-bottom: 0.65em; color: #1A1A1A; }
+        .grid-unit  ul{ margin: 0.9em 0 1.5em 0; padding: 0.25em 0 0.5em; }
+        .grid-unit li{ font-size: 14px; margin: 0 0 10px 0; }
+        .grid-unit a{ color: #1570A6; text-decoration: none; }
+        .grid-unit a:hover{ color: #083047; text-decoration: underline; }
+        .col-1 { margin-left: 0; }
+        .col-1 a{ color: #1A1A1A; }
+        .col-1 ul{ margin-bottom: 0; }
+        .col-1 li{ line-height: 1.7em; margin-bottom: 0.75em; font-size: 16px; }
+        .col-1 img{ display: inline-block; height: 26px; margin-right: 10px; width: 26px; }
+        .cam-links{ padding: 0 0 2.5% 0; }
+        .cam-links span{ font-size: 1em; margin: 0 3em 0 0; }
+        .cam-links a{ font-size: 14px; margin: 0 1.5em 0 0; color: #1570A6; text-decoration: none; }
+        .cam-links a:hover{ color: #1A1A1A; text-decoration: underline; }
+
+
+        /*============= footer =============*/
+        .footer{ position: absolute; bottom: 0; width:100%; height: 90px; font-size: 14px; background-color: #EEEEEE; border-top: 1px solid transparent; overflow: hidden; }
+        .footer .grid-container{ position: relative; margin-top: 1em; }
+        .footer a.local{ position: absolute; height:24px; left: 0; top: 0; padding: 0 0 0 35px; line-height: 24px; background: url(../images/earth-symbol.png) no-repeat 0 0; }
+        .footer .logo{ position: absolute; right: 0; top: 0; }
+        .footer ul{ position: absolute; top: 30px; right: 0; }
+        .footer ul li{ float: left; margin: 0 0 0 2em; }
+        .footer a{ color: #1570A6; text-decoration: none; }
+        .footer a:hover{ color: #083047; text-decoration: underline; }
+        /* end of Microsoft standard footer. */
+
+
+    // end of #share
+    }
+
+// end of #wrapper
+}
+
+
+@media all and (min-width: 1352px) {
+    #slider {
+        .slideThumbnails {
+            width: 500px; 
+            height: 48px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 32.55%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 22%;
+                }
+
+                .lotus {
+                    height: 28%;
+                    max-height: 205px;
+                    min-height: 200px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 16px;
+                top: 11px;
+            }
+
+            .navArrow {
+                display: block;
+            }
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 40%;
+                padding-top: 8%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+     #activities {
+
+        .tile {
+            .title {
+                font-size: 16px;
+            }
+
+            .chatBox {
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                    right: 6%;
+                    width: 140px;
+                    bottom: 30%;
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+        // end of #family
+        }
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            .capture {
+                position: relative;
+                margin-top: 14%;
+                left: 6%;
+                width: 140px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 14%;
+                left: 12%;
+                width: 140px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+@media all and (min-width: 1256px) and (max-width: 1351px) {
+    #slider {
+        .slideThumbnails {
+            width: 500px; 
+            height: 48px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 32.55%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 25%;
+                }
+                
+                .lotus {
+                    height: 28%;
+                    max-height: 190px;
+                    min-height: 189px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 16px;
+                top: 11px;
+            }
+
+            .navArrow {
+                display: block;
+            }
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 40%;
+                padding-top: 10%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+     #activities {
+
+        .tile {
+            .title {
+                font-size: 16px;
+            }
+
+            .chatBox {
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                    right: 6%;
+                    width: 140px;
+                    bottom: 30%;
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+        // end of #family
+        }
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            .capture {
+                position: relative;
+                margin-top: 14%;
+                left: 6%;
+                width: 140px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 14%;
+                left: 12%;
+                width: 140px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1255px) {
+    #slider {
+        .slideThumbnails {
+            width: 500px; 
+            height: 48px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 32.55%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 27%;
+                }
+                
+                .lotus {
+                    height: 28%;
+                    max-height: 170px;
+                    min-height: 169px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 16px;
+                top: 11px;
+            }
+
+            .navArrow {
+                display: none;
+            }
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 40%;
+                padding-top: 10%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+     #activities {
+
+        .tile {
+            .title {
+                font-size: 16px;
+            }
+
+            .chatBox {
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                    right: 6%;
+                    width: 140px;
+                    bottom: 30%;
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+        // end of #family
+        }
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            .capture {
+                position: relative;
+                margin-top: 14%;
+                left: 6%;
+                width: 140px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 14%;
+                left: 12%;
+                width: 140px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+@media all and (min-width: 850px) and (max-width: 1023px) {
+    #slider {
+        .slideThumbnails {
+            width: 500px; 
+            height: 48px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 34%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 30%;
+                }
+                
+                .lotus {
+                    height: 28%;
+                    max-height: 145px;
+                    min-height: 140px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 14px;
+                top: 15px;
+            }
+
+            .navArrow {
+                display: none;
+            }
+
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 40%;
+                padding-top: 12%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+    #activities {
+
+        .tile {
+            .title {
+                font-size: 14px;
+            }
+
+            .chatBox {
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+        // end of #family
+        }
+
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            p {
+                font-size: 14px;
+            }
+            .capture {
+                position: relative;
+                margin-top: 21%;
+                left: 6%;
+                width: 120px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 21%;
+                left: 12%;
+                width: 80px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 849px) {
+    #slider {
+        .slideThumbnails {
+            width: 500px; 
+            height: 48px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 34%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 33%;
+                }
+                
+                .lotus {
+                    height: 20%;
+                    max-height: 125px;
+                    min-height: 120px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 14px;
+                top: 15px;
+            }
+
+            .navArrow {
+                display: none;
+            }
+
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 35%;
+                padding-top: 16%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+    #activities {
+
+        .tile {
+            .title {
+                font-size: 14px;
+            }
+
+            .chatBox {
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+        // end of #family
+        }
+
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            p {
+                font-size: 14px;
+            }
+            .capture {
+                position: relative;
+                margin-top: 21%;
+                left: 6%;
+                width: 120px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 21%;
+                left: 12%;
+                width: 80px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+
+@media all and (min-width: 700px) and (max-width: 767px) {
+    #slider {
+        .slideThumbnails {
+            width: 400px; 
+            height: 38px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 36%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 32%;
+                }
+                
+                .lotus {
+                    height: 17%;
+                    max-height: 115px;
+                    min-height: 110px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 12px;
+                top: 15px;
+            }
+
+            .navArrow {
+                height: 50%;
+                display: none;
+            }
+
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 30%;
+                padding-top: 17%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+    #activities {
+
+        .tile {
+            .title {
+                font-size: 14px;
+            }
+            .chatBox {
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+
+        // end of #family
+        }
+
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            p {
+                font-size: 12px;
+            }
+            .capture {
+                position: relative;
+                margin-top: 30%;
+                left: 6%;
+                width: 70px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 30%;
+                left: 12%;
+                width: 45px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 699px) {
+    #slider {
+        .slideThumbnails {
+            width: 400px; 
+            height: 38px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 36%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 33%;
+                }
+
+                .lotus {
+                    height: 17%;
+                    max-height: 105px;
+                    min-height: 88px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 12px;
+                top: 15px;
+            }
+
+            .navArrow {
+                height: 50%;
+                display: none;
+            }
+
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 30%;
+                padding-top: 18%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+    #activities {
+
+        .tile {
+            .title {
+                font-size: 14px;
+            }
+            .chatBox {
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+
+        // end of #family
+        }
+
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            p {
+                font-size: 12px;
+            }
+            .capture {
+                position: relative;
+                margin-top: 30%;
+                left: 6%;
+                width: 70px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 30%;
+                left: 12%;
+                width: 45px;
+            }
+        }
+    // end of #tools
+    }
+}
+
+@media all and (max-width: 599px) {
+    #slider {
+        .slideThumbnails {
+            width: 400px; 
+            height: 38px;
+            text-align: center;
+
+            .slideThumbnail {
+                padding: 0 6px 0 6px;
+            }
+        }
+
+        .joinUs {
+            top: 36%;
+        }
+
+        #slides {
+    
+            .slide4 {
+
+                .river {
+                    top: 33%;
+                }
+                
+                .lotus {
+                    height: 17%;
+                    max-height: 95px;
+                    min-height: 80px;
+                }
+
+            // end of .slide4
+            }
+        
+        // end of #slides
+        }
+
+    // end of #slider
+    }
+
+    #nav {
+
+        .navItem {
+            p {
+                font-size: 12px;
+                top: 15px;
+            }
+
+            .navArrow {
+                height: 50%;
+                display: none;
+            }
+
+        // end of .navItem
+        }
+
+        .navBuy {
+            img {
+                height: 30%;
+                padding-top: 22%;
+            }
+        } 
+
+    // end of #nav
+    } 
+
+    #activities {
+
+        .tile {
+            .title {
+                font-size: 14px;
+            }
+            .chatBox {
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    // end of #activities
+    }
+
+    #familyChoice {
+
+        #family {
+            .tileContent {
+
+                .learnMore {
+                }
+            }
+
+            .tile {
+                .tileContent {
+                    .learnMore {
+                        right: 6%;
+                        width: 140px;
+                        bottom: 30%;
+                    }
+                }
+            }
+
+        // end of #family
+        }
+
+    // end of #familyChoice
+    }
+
+    #tools {
+        .tileContent {
+            p {
+                font-size: 12px;
+            }
+            .capture {
+                position: relative;
+                margin-top: 30%;
+                left: 6%;
+                width: 70px;
+            }
+
+            .learnMore {
+                position: relative;
+                margin-top: 30%;
+                left: 12%;
+                width: 45px;
+            }
+        }
+    // end of #tools
+    }
+}
+
