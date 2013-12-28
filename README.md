@@ -47,7 +47,7 @@ cd ./office365
 ```
 
 ###step4
-Installing [Compass](http://compass-style.org/), and open-source css authoring framework, and compiling all sass files to css. 
+Installing [Compass](http://compass-style.org/), an open-source css authoring framework, and compiling all sass files to css. 
 ```sh
 cd ./compass
 compass watch
