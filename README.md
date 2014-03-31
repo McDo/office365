@@ -34,7 +34,7 @@ Getting started
 getting [node.js](http://nodejs.org) if you don't have one.
 
 ###step2
-Installing brunch, the project building tool.
+Installing [brunch](http://brunch.io), the project building tool.
 ```sh
 sudo npm install brunch -g
 ```
