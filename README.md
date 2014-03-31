@@ -31,7 +31,7 @@ Prerequisite
 Getting started
 ---------------
 ###step1
-getting [node.js](http://nodejs.org) if you don't have one.
+Getting [node.js](http://nodejs.org) if you don't have one.
 
 ###step2
 Installing [brunch](http://brunch.io), the project building tool.
