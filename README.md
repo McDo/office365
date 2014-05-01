@@ -24,7 +24,7 @@ Prerequisite
   - [jquery.event.mousestop.js](http://richardscarrott.co.uk/posts/view/jquery-mousestop-event) *v0.1.1*
   - [jquery.hammer.js](http://eightmedia.github.io/hammer.js/) *v1.0.6dev*
   - [jquery.bgpos.js](https://github.com/nelsonwellswku/jquery.bgpos) (bug fixed on IE11)
-  - [paper.js](http://paperjs.org/) *v0.9.9*
+  - [paper.js](http://paperjs.org/) *v0.9.15*
   - [easeljs](http://www.createjs.com/#!/EaselJS) *v0.6.1*
   - [tween.js](http://www.createjs.com/#!/TweenJS)
 
