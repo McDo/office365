@@ -6,8 +6,8 @@
         {            
             if (fx.state === 0 && typeof fx.end == 'string') 
             {
-                if( /MSIE (10\.\d+);/.test(navigator.userAgent) || /rv\:11\.\d+/.test(navigator.userAgent) )
-                { // ie10 or ie11
+                if( /MSIE (9\.\d+);/.test(navigator.userAgent) || /MSIE (10\.\d+);/.test(navigator.userAgent) || /rv\:11\.\d+/.test(navigator.userAgent) )
+                { // ie9, ie10 or ie11
                     var start = $.curCSS(fx.elem,'backgroundPositionX');
                     start +=  ' ';
                     start += $.curCSS(fx.elem,'backgroundPositionY');
