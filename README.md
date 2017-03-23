@@ -84,7 +84,7 @@ Thanks.
 License
 -------
 
-Copyright (c) 2013-2014 Logicdesign
+Copyright (c) 2013-2014 McDo
 
 
     
